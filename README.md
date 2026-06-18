@@ -12,7 +12,7 @@ Projeto desenvolvido para criar uma experiência visual imersiva e interativa pa
   </tr>
 </table>
 
-🔗 **Demo:** pringles-kappa.vercel.app
+🔗 **Demo:** https://pringles-kappa.vercel.app/
 
 ---
 
