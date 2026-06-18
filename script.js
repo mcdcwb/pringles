@@ -29,7 +29,7 @@ latasMenores.forEach(LataMenor => {
         
             setTimeout(()=> {
                 clicar = true
-            }, 2000)
+            }, 1000)
         }
     };
 });
