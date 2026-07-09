@@ -15,7 +15,13 @@
 
 <body>
     <header>
-        <nav>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="menu-nav">
             <ul>
                 <li>Início</li>
                 <li>Promoções</li>
@@ -23,13 +29,13 @@
                 <li>Contato</li>
             </ul>
         </nav>
-        <img src="img/logo.webp" alt="Logotipo Pringles">
+
+        <img class="logo-header" src="img/logo.webp" alt="Logotipo Pringles">
 
         <div class="header-btn">
             <img src="img/lupa.svg" alt="Pesquisar">
             <img src="img/login.svg" alt="Login/Registrar">
         </div>
-
     </header>
 
     <main>
@@ -44,12 +50,37 @@
                         deleniti tempore recusandae ad unde eius sed incidunt explicabo corporis assumenda, iusto quia
                         voluptas sit tempora! Ullam!</p>
                     <button>VER NA LOJA</button>
+                    <div class="navegacao">
+                        <div class="indicadores">
+                            <span class="barrinha ativa"></span>
+                            <span class="barrinha"></span>
+                            <span class="barrinha"></span>
+                            <span class="barrinha"></span>
+                        </div>
+                        <div class="setas">
+                            <button class="seta seta-esquerda" aria-label="Slide anterior">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg>
+                            </button>
+                            <button class="seta seta-direita" aria-label="Próximo slide">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="latas">
                     <img src="img/batata-1.webp" alt="">
                     <img src="img/batata-2.webp" alt="">
                 </div>
-
             </div>
 
             <div class="slide">
@@ -61,6 +92,32 @@
                         unde cupiditate laborum exercitationem quas praesentium. Aperiam illum tenetur ipsum earum
                         obcaecati ad maiores ratione.</p>
                     <button>VER NA LOJA</button>
+                    <div class="navegacao">
+                        <div class="indicadores">
+                            <span class="barrinha"></span>
+                            <span class="barrinha ativa"></span>
+                            <span class="barrinha"></span>
+                            <span class="barrinha"></span>
+                        </div>
+                        <div class="setas">
+                            <button class="seta seta-esquerda" aria-label="Slide anterior">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg>
+                            </button>
+                            <button class="seta seta-direita" aria-label="Próximo slide">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="latas">
                     <img src="img/batata-2.webp" alt="">
@@ -78,6 +135,32 @@
                         praesentium voluptatem officia accusantium porro est voluptates optio, facere quibusdam,
                         delectus repellat, voluptas cum accusamus atque quod amet!</p>
                     <button>VER NA LOJA</button>
+                    <div class="navegacao">
+                        <div class="indicadores">
+                            <span class="barrinha"></span>
+                            <span class="barrinha"></span>
+                            <span class="barrinha ativa"></span>
+                            <span class="barrinha"></span>
+                        </div>
+                        <div class="setas">
+                            <button class="seta seta-esquerda" aria-label="Slide anterior">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg>
+                            </button>
+                            <button class="seta seta-direita" aria-label="Próximo slide">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="latas">
                     <img src="img/batata-3.webp" alt="">
@@ -95,6 +178,32 @@
                         minus quibusdam officia suscipit voluptate impedit autem earum consectetur iste mollitia,
                         tenetur, accusantium molestiae aliquid dolores dolore.</p>
                     <button>VER NA LOJA</button>
+                    <div class="navegacao">
+                        <div class="indicadores">
+                            <span class="barrinha"></span>
+                            <span class="barrinha"></span>
+                            <span class="barrinha"></span>
+                            <span class="barrinha ativa"></span>
+                        </div>
+                        <div class="setas">
+                            <button class="seta seta-esquerda" aria-label="Slide anterior">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg>
+                            </button>
+                            <button class="seta seta-direita" aria-label="Próximo slide">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="latas">
                     <img src="img/batata-4.webp" alt="">
@@ -104,15 +213,118 @@
             </div>
         </section>
 
+        <section class="segunda-secao">
+            <div class="faixa-vermelha">
+                <div class="texto-faixa">
+                    <p><i>Projeto Pringles</i></p>
+                    <span>Luan Machado - Dev</span>
+                    <p><i>Projeto Pringles</i></p>
+                    <span>Luan Machado - Dev</span>
+                    <p><i>Projeto Pringles</i></p>
+                    <span>Luan Machado - Dev</span>
+                    <p><i>Projeto Pringles</i></p>
+                    <span>Luan Machado - Dev</span>
+                </div>
+            </div>
+
+            <div class="conteudo-scroll">
+                <div class="texto-lorem lorem1">
+                    <div class="texto-conteudo">
+                        <h3>Explore o Salt & Vinegar</h3>
+                        <h4>Informações Nutricionais:</h4>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
+                            sapien non eros convallis
+                            convallis vel ac leo. Curabitur elementum convallis diam vel sodales. Vestibulum scelerisque
+                            purus a eros hendrerit tempor. Mauris id nisl ac sem gravida tristique. Fusce a convallis
+                            augue,
+                            id tincidunt lorem. Curabitur sed lorem ante. Phasellus vel lectus sit amet lectus molestie
+                            hendrerit sed id leo.</p>
+                    </div>
+                    <img src="img/batata-1.webp" alt="Pringles" class="lata-scroll lata-1">
+                </div>
+
+                <div class="texto-lorem lorem2">
+                    <div class="texto-conteudo">
+                        <h3>Explore o Ham & Cheese</h3>
+                        <h4>Informações Nutricionais:</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac sapien non eros convallis
+                            convallis vel ac leo. Curabitur elementum convallis diam vel sodales. Vestibulum scelerisque
+                            purus a eros hendrerit tempor. Mauris id nisl ac sem gravida tristique. Fusce a convallis
+                            augue,
+                            id tincidunt lorem. Curabitur sed lorem ante. Phasellus vel lectus sit amet lectus molestie
+                            hendrerit sed id leo.</p>
+                    </div>
+                    <img src="img/batata-2.webp" alt="Pringles" class="lata-scroll lata-2">
+                </div>
+
+                <div class="texto-lorem lorem3">
+                    <div class="texto-conteudo">
+                        <h3>Explore o Paprika</h3>
+                        <h4>Informações Nutricionais:</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac sapien non eros convallis
+                            convallis vel ac leo. Curabitur elementum convallis diam vel sodales. Vestibulum scelerisque
+                            purus a eros hendrerit tempor. Mauris id nisl ac sem gravida tristique. Fusce a convallis
+                            augue,
+                            id tincidunt lorem. Curabitur sed lorem ante. Phasellus vel lectus sit amet lectus molestie
+                            hendrerit sed id leo.</p>
+                    </div>
+                    <img src="img/batata-3.webp" alt="Pringles" class="lata-scroll lata-3">
+                </div>
+
+                <div class="texto-lorem lorem4">
+                    <div class="texto-conteudo">
+                        <h3>Explore o Cheese & Onion</h3>
+                        <h4>Informações Nutricionais:</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac sapien non eros convallis
+                            convallis vel ac leo. Curabitur elementum convallis diam vel sodales. Vestibulum scelerisque
+                            purus a eros hendrerit tempor. Mauris id nisl ac sem gravida tristique. Fusce a convallis
+                            augue,
+                            id tincidunt lorem. Curabitur sed lorem ante. Phasellus vel lectus sit amet lectus molestie
+                            hendrerit sed id leo.</p>
+                    </div>
+                    <img src="img/batata-4.webp" alt="Pringles" class="lata-scroll lata-4">
+                </div>
+
+                <!-- <div class="animacao-latas">
+                    <div class="linha-branca-container">
+                        <svg viewBox="0 0 1000 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 140 C 180 30, 340 40, 500 110 S 820 190, 1000 70" stroke="white"
+                                stroke-width="12" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
     </main>
 
     <footer>
+        <a href="https://github.com/mcdcwb" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub/mcdcwb" width="28" height="32"></a>
+
+        <a href="https://www.linkedin.com/in/luanmachadof/" target="_blank" rel="noopener noreferrer">
+            <img src="https://api.iconify.design/mdi:linkedin.svg?color=%23ffffff" alt="LinkedIn/luanmachadof"
+                width="32" height="32">
+        </a>
 
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuNav = document.querySelector('.menu-nav');
+
+        if (menuToggle && menuNav) {
+            menuToggle.addEventListener('click', () => {
+                menuNav.classList.toggle('active');
+                const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', String(!expanded));
+            });
+        }
+    </script>
 </body>
 
 </html>
