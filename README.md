@@ -7,7 +7,10 @@ Projeto desenvolvido para criar uma experiência visual imersiva e interativa pa
 <table align="center">
   <tr>
     <td valign="center">
-      <img src="./preview.png"/>
+      <img src="./preview1.png"/>
+    </td>
+    <td valign="center">
+      <img src="./preview2.png"/>
     </td>
   </tr>
 </table>
@@ -21,6 +24,7 @@ Projeto desenvolvido para criar uma experiência visual imersiva e interativa pa
 - 🎢 Slider interativo de sabores (Salt & Vinegar, Paprika, etc.)
 - 🎭 Animações de texto e elementos dinâmicos com GSAP
 - 🎨 Interface moderna e totalmente responsiva
+- 📲 Interações com Swipe
 
 ---
 
