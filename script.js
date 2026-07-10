@@ -39,6 +39,28 @@ function mudarSlide(direcao) {
     }
 }
 
+let touchStartX = 0;
+let touchEndX = 0;
+
+const slider = document.querySelector(".slider");
+
+slider.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+slider.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+            mudarSlide("proximo");
+        } else {
+            mudarSlide("anterior");
+        }
+    }
+}, { passive: true });
+
 latasMenores.forEach(LataMenor => {
     LataMenor.onclick = () => {
         mudarSlide("proximo");
