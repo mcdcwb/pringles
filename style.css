@@ -6,7 +6,6 @@
 
 html {
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -137,12 +136,6 @@ header {
 @media (max-width: 820px) {
     .logo-header {
         max-width: 10vw;
-    }
-}
-
-@media (max-width: 1040px) and (orientation: landscape) {
-    .logo-header {
-        display: none;
     }
 }
 
@@ -549,8 +542,6 @@ header {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     z-index: 10;
     margin-bottom: 2vw;
-    will-change: transform;
-    transform: translateZ(0);
 }
 
 .texto-faixa {
