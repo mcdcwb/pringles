@@ -139,6 +139,12 @@ header {
     }
 }
 
+@media (max-width: 1023px) and (orientation: landscape) {
+    .logo-header {
+        display: none;
+    }
+}
+
 .slider {
     width: 100%;
     height: 100vh;
