@@ -1,6 +1,6 @@
 # 🍟 Pringles Landing Page
 
-Projeto desenvolvido para criar uma experiência visual imersiva e interativa para a marca Pringles, explorando animações de alto nível e transições fluidas entre produtos.
+Projeto desenvolvido para criar uma experiência visual imersiva e interativa com a marca Pringles, explorando animações de alto nível e transições fluidas entre produtos.
 
 ## 📸 Preview
 
