@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -542,6 +543,8 @@ header {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     z-index: 10;
     margin-bottom: 2vw;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .texto-faixa {

@@ -73,72 +73,126 @@ function animarTitulo() {
 
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.matchMedia().add("(min-width: 769px)", () => {
+    gsap.to(".texto-faixa", {
+        xPercent: -30,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".segunda-secao",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1
+        }
+    });
 
-gsap.to(".texto-faixa", {
-    xPercent: -30,
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".segunda-secao",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1
-    }
+    gsap.to(".linha-branca-container", {
+        x: -80,
+        rotation: 5,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".segunda-secao",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1
+        }
+    });
+
+    gsap.to(".lata-1", {
+        y: 60,
+        rotation: 15,
+        scrollTrigger: {
+            trigger: ".segunda-secao",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1.8
+        }
+    });
+
+    gsap.to(".lata-2", {
+        y: 70,
+        rotation: -15,
+        scrollTrigger: {
+            trigger: ".segunda-secao",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1.2
+        }
+    });
+
+    gsap.to(".lata-3", {
+        y: 50,
+        rotation: 12,
+        scrollTrigger: {
+            trigger: ".segunda-secao",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1.5
+        }
+    });
+
+    gsap.to(".lata-4", {
+        y: 60,
+        rotation: -13,
+        scrollTrigger: {
+            trigger: ".segunda-secao",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1.5
+        }
+    });
+
+    return () => {
+        // cleanup
+        ScrollTrigger.getAll().forEach(st => st.kill());
+    };
 });
 
+gsap.matchMedia().add("(max-width: 768px)", () => {
+    gsap.to(".lata-1", {
+        y: 30,
+        rotation: 8,
+        scrollTrigger: {
+            trigger: ".segunda-secao",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 0.5
+        }
+    });
 
-gsap.to(".linha-branca-container", {
-    x: -80,
-    rotation: 5,
-    ease: "power1.out",
-    scrollTrigger: {
-        trigger: ".segunda-secao",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1
-    }
-});
+    gsap.to(".lata-2", {
+        y: 35,
+        rotation: -8,
+        scrollTrigger: {
+            trigger: ".segunda-secao",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 0.5
+        }
+    });
 
+    gsap.to(".lata-3", {
+        y: 25,
+        rotation: 6,
+        scrollTrigger: {
+            trigger: ".segunda-secao",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 0.5
+        }
+    });
 
-gsap.to(".lata-1", {
-    y: 60,
-    rotation: 15,
-    scrollTrigger: {
-        trigger: ".segunda-secao",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1.8
-    }
-});
+    gsap.to(".lata-4", {
+        y: 30,
+        rotation: -7,
+        scrollTrigger: {
+            trigger: ".segunda-secao",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 0.5
+        }
+    });
 
-gsap.to(".lata-2", {
-    y: 70,
-    rotation: -15,
-    scrollTrigger: {
-        trigger: ".segunda-secao",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1.2
-    }
-});
-
-gsap.to(".lata-3", {
-    y: 50,
-    rotation: 12,
-    scrollTrigger: {
-        trigger: ".segunda-secao",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1.5
-    }
-});
-
-gsap.to(".lata-4", {
-    y: 60,
-    rotation: -13,
-    scrollTrigger: {
-        trigger: ".segunda-secao",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1.5
-    }
+    return () => {
+        ScrollTrigger.getAll().forEach(st => st.kill());
+    };
 });
